@@ -18,6 +18,7 @@
         <nav aria-label="Menu bloga">
             <ul>
                 <li><a href="/">Strona główna</a></li>
+                <li><a href="/create.php">Dodanie Zadania</a></li>
             </ul>
         </nav>
     </header>
