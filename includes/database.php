@@ -1,4 +1,5 @@
 <?php
+defined('APP_ROOT') or die('Access denied!'); 
 $server = 'localhost';
 $username = 'root';
 $password = '';
