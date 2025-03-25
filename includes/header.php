@@ -14,5 +14,12 @@
 
 
 <body>
-    <?php include 'includes/header.php'; ?>
-    <main>
+    <header role="banner">
+        <nav aria-label="Menu bloga">
+            <ul>
+                <li><a href="/">Strona główna</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <main>

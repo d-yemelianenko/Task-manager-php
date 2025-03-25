@@ -2,11 +2,11 @@
 require_once 'database.php';
 
 try {
-    $stmt = $pdo->prepare("SELECT * FROM posts");
+    $stmt = $pdo->prepare("SELECT * FROM tasks");
     $stmt->execute();
-    $posts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $tasks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    if (empty($posts)) {
+    if (empty($tasks)) {
         echo "Nie znaleziono posta o ID: $id";
     }
 } catch (PDOException $e) {
