@@ -6,9 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $page_title ?? 'Mój Blog'; ?></title>
-    <?php define('BASE_URL', '/php_blog/'); ?>
-    <link href="<?php echo BASE_URL; ?>css/style.css">
-
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 

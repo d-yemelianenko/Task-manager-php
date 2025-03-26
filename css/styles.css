@@ -1,12 +1,12 @@
-table {
-    border: 1px solid black;
-    border-collapse: collapse;
-    width: 100%;
-    margin: 20px;
-    padding: 10px;
-    background-color: rgb(148, 235, 206);
+.btn-edit{
+background-color: rgb(0, 255, 221);
+color: rgb(1, 1, 1);
+border: 1px solid  rgb(30, 237, 213);
+border-radius: 40px;
 }
-th,td{
-    color: blue;
-    border-spacing: 15px;
+.btn-delete{
+    background-color: rgb(251, 7, 7);
+    border: 1px solid  rgb(244, 6, 6);
+    border-radius: 40px;
+    color: rgb(0, 0, 0);
 }
