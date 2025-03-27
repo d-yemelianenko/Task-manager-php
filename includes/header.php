@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $page_title ?? 'Mój Blog'; ?></title>
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
-
 
 <body>
     <header role="banner">
@@ -21,4 +19,3 @@
         </nav>
     </header>
     <main role="main">
-        <main>
