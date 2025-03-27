@@ -69,11 +69,5 @@ include APP_ROOT . '/includes/header.php';
         <p>Brak postów do wyświetlenia.</p>
     <?php endif; ?>
 </div>
-<script>
-    function showView(viewType) {
-        document.getElementById('cards-view').style.display = 'none';
-        document.getElementById('table-view').style.display = 'none';
-        document.getElementById(viewType + '-view').style.display = 'block';
-    }
-</script>
+
 <?php include APP_ROOT . '/includes/footer.php'; ?>
