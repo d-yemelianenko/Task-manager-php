@@ -1,0 +1,107 @@
+
+.navbar {
+  height: 70px;
+}
+
+main{
+  margin-top: 80px; 
+}
+.btn-edit {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border: 1px solid #ffc107;
+  color: #ffc107;
+  background-color: transparent;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.btn-edit:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.btn-delete {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  background-color: transparent;
+  border-radius: 0.375rem;
+  text-decoration: none;
+}
+
+.btn-delete:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+.table-title {
+        font-size: 1.75rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #f8f9fa;
+    }
+
+.badge-todo {
+        background-color: #0d6efd; /* Bootstrap primary (niebieski) */
+    }
+
+.badge-in-progress {
+        background-color: #ffc107; /* Bootstrap warning (żółty) */
+        color: #212529;
+    }
+
+ .badge-done {
+        background-color: #198754; /* Bootstrap success (zielony) */
+    }
+
+    table td, table th {
+        vertical-align: middle;
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+
+
+  
+  .card-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+  }
+
+  .badge-todo {
+      background-color: #0d6efd; /* Niebieski */
+  }
+
+  .badge-in-progress {
+      background-color: #ffc107; /* Żółty */
+      color: #212529;
+  }
+
+  .badge-done {
+      background-color: #198754; /* Zielony */
+  }
+
+  .card {
+      background-color: #f8f9fa;
+      border: 1px solid #dee2e6;
+  }
+
+  .card-text,
+  .card p {
+      font-size: 0.95rem;
+      color: #fff;
+      margin-bottom: 0.4rem;
+  }
+
+  .btn {
+      font-size: 0.85rem;
+  }
+  .form-container {
+    width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
