@@ -17,6 +17,10 @@ Aplikacja do zarządzania zadaniami stworzona w czystym PHP jako trening backend
 - Podstawowy interfejs w HTML
 - Połączenie z bazą danych
 
+## 📸 Zrzuty ekranu
+![screen-Task_cards](https://github.com/user-attachments/assets/d8c6b603-3dc9-4f7f-b0eb-733abe5f17de)
+![screen-Task_table](https://github.com/user-attachments/assets/d546da1c-4a0e-4f51-b2ac-7e7cbd10e0ed)
+
 ## Dalszy rozwój
 
 - Dodanie rejestracji/logowania użytkownika
