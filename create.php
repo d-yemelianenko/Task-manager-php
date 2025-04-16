@@ -55,24 +55,42 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-<form action="create.php" method="POST">
-    Nazwa zadania :
-    <input type="text" id="title" name="title" required><br>
-    Opis zadania : <input type="text" name="description" required><br>
-    Status zadania
-    <input list="status" name="status" required><br>
-    <datalist id="status">
-        <option value="todo">Do zrobienia</option>
-        <option value="in_progress">W trakcie</option>
-        <option value="done">Skonczone</option>
-    </datalist>
-    Wybież prioritet <input list="priority" name="priority" required><br>
-    <datalist id="priority">
-        <option value="low">Zaplanowane</option>
-        <option value="medium">Sredniej ważności</option>
-        <option value="high">Terminowe</option>
-    </datalist>
-    Data wykonania zadania: <input type="date" name="due_date" required><br>
-    Data rozpoczecia zadania: <input type="date" name="created_date" required><br>
-    <button type="submit" name="submit">Submit</button>
+<div class="form-container">
+<h2 class="my-3">New tasks</h2>
+<form action="create.php" method="POST" class="p-4 bg-dark text-white rounded">
+    <div class="mb-3">
+        <label for="title" class="form-label">Nazwa zadania:</label>
+        <input type="text" class="form-control" id="title" name="title" required><br>
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Opis zadania:</label>
+        <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="status" class="form-label">Status zadania:</label>
+        <select class="form-select" id="status" name="status" required>
+            <option value="todo">Do zrobienia</option>
+            <option value="in_progress">W trakcie</option>
+            <option value="done">Skończone</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="priority" class="form-label">Wybierz priorytet:</label>
+        <select class="form-select" id="priority" name="priority" required>
+            <option value="low">Zaplanowane</option>
+            <option value="medium">Sredniej ważności</option>
+            <option value="high">Terminowe</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="created_date" class="form-label">Data rozpoczecia zadania: </label>
+        <input type="date" class="form-control" id="created_date" name="created_date" required>
+    </div>
+    <div class="mb-3">
+        <label for="due_date" class="form-label">Data wykonania zadania:</label>
+        <input type="date" class="form-control" id="due_date" name="due_date" required>
+    </div>
+    <button type="submit" name="submit" class="btn btn-primary">Zapisz</button>
 </form>
+</div>

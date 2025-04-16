@@ -12,5 +12,4 @@ if ($success && $stmt->rowCount() > 0) {
     exit;
 } else {
     echo "Nie udało się usunąć zadania lub zadanie nie istnieje.";
-    // print_r($stmt->errorInfo()); // Odkomentuj do debugowania
 }

@@ -87,24 +87,49 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-<form action="edit.php" method="POST">
-    <input type="hidden" name="id" value="<?= $task['id'] ?>">
-    Nazwa zadania :
-    <input type="text" id="title" name="title" value="<?= htmlspecialchars($title ?? '') ?>" required><br>
-    Opis zadania : <textarea name="description" required> <?= htmlspecialchars($task['description'] ?? '') ?></textarea><br>
-    Status zadania:
-    <select name="status" required>
-        <option value="todo" <?= ($task['status'] ?? '') === 'todo' ? 'selected' : '' ?>>Do zrobienia</option>
-        <option value="in_progress" <?= ($task['status'] ?? '') === 'in_progress' ? 'selected' : '' ?>>W trakcie</option>
-        <option value="done" <?= ($task['status'] ?? '') === 'done' ? 'selected' : '' ?>>Skończone</option>
-    </select><br>
-    Wybież prioritet
-    <select name="priority" id="priority">
-        <option value="low" <?= ($task['priority'] === 'low' ? 'selected' : '') ?>>Zaplanowane</option>
-        <option value="medium" <?= ($task['priority'] === 'medium' ? 'selected' : '') ?>>Sredniej ważności</option>
-        <option value="high" <?= ($task['priority'] === 'high' ? 'selected' : '') ?>>Terminowe</option>
-    </select><br>
-    Data wykonania zadania: <input type="date" name="due_date" value="<?= htmlspecialchars($due_date) ?>" required><br>
-    Data modyfikacji: <input type="date" name="updated_at" value="<?= htmlspecialchars($updated_at_date) ?>" required><br>
-    <button type="submit" name="submit">Zapisz</button>
-</form>
+<div class="form-container">
+    <form action="edit.php" method="POST" class="p-4 bg-dark text-white rounded">
+        <input type="hidden" name="id" value="<?= $task['id'] ?>">
+
+        <div class="mb-3">
+            <label for="title" class="form-label">Nazwa zadania:</label>
+            <input type="text" class="form-control" id="title" name="title"
+                value="<?= htmlspecialchars($title ?? '') ?>" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="description" class="form-label">Opis zadania:</label>
+            <textarea class="form-control" id="description" name="description" rows="3" required><?= htmlspecialchars($task['description'] ?? '') ?></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="status" class="form-label">Status zadania:</label>
+            <select class="form-select" id="status" name="status" required>
+                <option value="todo" <?= ($task['status'] ?? '') === 'todo' ? 'selected' : '' ?>>Do zrobienia</option>
+                <option value="in_progress" <?= ($task['status'] ?? '') === 'in_progress' ? 'selected' : '' ?>>W trakcie</option>
+                <option value="done" <?= ($task['status'] ?? '') === 'done' ? 'selected' : '' ?>>Skończone</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="priority" class="form-label">Wybierz priorytet:</label>
+            <select class="form-select" id="priority" name="priority">
+                <option value="low" <?= ($task['priority'] === 'low' ? 'selected' : '') ?>>Zaplanowane</option>
+                <option value="medium" <?= ($task['priority'] === 'medium' ? 'selected' : '') ?>>Średniej ważności</option>
+                <option value="high" <?= ($task['priority'] === 'high' ? 'selected' : '') ?>>Terminowe</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="due_date" class="form-label">Data wykonania zadania:</label>
+            <input type="date" class="form-control" id="due_date" name="due_date" value="<?= htmlspecialchars($due_date) ?>" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="updated_at" class="form-label">Data modyfikacji:</label>
+            <input type="date" class="form-control" id="updated_at" name="updated_at" value="<?= htmlspecialchars($updated_at_date) ?>" required>
+        </div>
+
+        <button type="submit" name="submit" class="btn btn-primary">Zapisz</button>
+    </form>
+</div>
